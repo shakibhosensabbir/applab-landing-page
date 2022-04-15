@@ -1,0 +1,590 @@
+/*
+  Theme Name: Name - Applab HTML Template
+  Author: Shakib Hosen Sabbir
+  Support: 
+  Description: Applab  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+ body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+:root{
+	--theme-color:#2500f9;
+	--theme--white--color:#fff;
+	--bg--font:'Merriweather', serif;
+	--text--color:#616368;
+	--title--color:#242f51;
+}
+img.img-fluid {
+    max-width: 360px !important;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+.form-control:focus {
+    color: #212529;
+	background: #f5f6fa;
+    border-color: #f5f6fa !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%) !important;
+}
+
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%) !important;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+	
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	color: #121121;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #616368;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+span.fa-solid.fa-bars {
+    color: #ffffff91;
+    border: 1px solid #ffffff91;
+    padding: 10px;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+h5{
+	font-weight: 300 !important;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+	-moz-user-select: none;
+	background: var(--theme-color) none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	border: 2px solid white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	border-radius: 50px;
+	margin-bottom: 0;
+	padding: 20px 40px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+.owl-carousel .owl-nav div {
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+	height: 40px;
+	left: 20px;
+	line-height: 40px;
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.3s ease 0s;
+	visibility: hidden;
+	width: 40px;
+}
+.owl-carousel .owl-nav div.owl-next {
+	left: auto;
+	right: 20px;
+}
+.owl-carousel .owl-nav div {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* Header Section Strat */
+
+.header{
+	
+	height: 800px;
+}
+li.nav-item a {
+    color: var(--title--color);
+    transition: 0.1s all;
+	font-weight: 600;
+    margin: 0px 20px 0px 20px;
+}
+
+li.nav-item a:hover {
+    color: var(--theme-color) !important;
+}
+.header__bar {
+    border-bottom: 1px solid #ffffff47;
+    padding-bottom: 15px;
+}
+
+.header__box h2 {
+    font-size: 45px;
+	color: var(--title--color);
+}
+.secound__btn {
+    background: white;
+    color: var(--theme-color);
+    border: 2px solid #e1e7ee;
+}
+.secound__btn:hover {
+    border: 2px solid #eaeff0;
+}
+.main__btn .outline__btn {
+    background: #223047;
+    color: var(--theme--white--color);
+    border: 1px solid var(--theme--white--color);
+	transition: 0.5s all;
+}
+.main__btn .btn:hover {
+    border: 2px solid var(--theme-color);
+    background: white;
+    color: var(--theme-color);
+}
+.header__bar{
+	position: relative;
+}
+.header__bar .icon img {
+    background: #feaa25;
+    padding: 10px;
+    border-radius: 50px;
+}
+.header__bar h6 {
+    background: #e2eaed;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--title--color);
+    z-index: -1;
+}
+.header__bar .icon img {
+    margin-right: -40px;
+    margin-top: -10px;
+}
+.header__box h2 {
+    font-size: 60px;
+    color: var(--title--color);
+	line-height: 1.2;
+}
+/* Header Section End*/
+
+
+/* Image Logo Slider Section */
+.owl-carousel .owl-item img{
+	width: 150px !important;
+}
+
+/* Image Logo Slider Section*/
+
+
+/* Awosoem Section Strat */
+img.awosem__img {
+    max-width: 460px !important;
+}
+
+.awesome__card .media {
+    margin-top: 35px;
+}
+.section__title h2 {
+    font-size: 40px;
+    color: var(--title--color);
+}
+.awesome__card .media-body h5 {
+    font-weight: 600 !important;
+}
+.awesome__card .media img {
+    padding: 15px;
+    border-radius: 50px;
+}
+.media.red img{
+	background: #ffecef;
+}
+.media.green img{
+	background: #f4f4ff;
+}
+.media.blue img{
+	background: #e4ffee;
+}
+.media.red h5 {
+    color: #f55767;
+}
+.media.green h5 {
+    color: #2563ff;
+}
+.media.blue h5 {
+    color: #40975f;
+}
+/* Awosoem Section End */
+
+/* Design Section Strat */
+
+.design__box img {
+    max-width: 460px !important;
+}
+/* Design Section Strat */
+
+/* Service Section Strat */
+
+.service__box h4 {
+    margin-top: 20px;
+}
+
+.service__box {
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+.service__box .icon {
+    background: red;
+    width: 90px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 15px;
+    height: 90px;
+}
+.icon.app {
+    background-color: #ffecef;
+}
+.icon.award{
+	background-color: #eaf9ff;
+}
+.icon.cloud{
+	background-color: #fff6d3;
+}
+.icon.customization{
+	background-color: #e4ffee;
+}
+.icon.ux{
+	background-color: #f4f4ff;
+}
+.icon.customer{
+	background-color: #fdeee4;
+}
+.service__box.box{
+	text-align: center;
+		padding: 10px 50px 0px 0px;
+}
+img.awosem__imgss {
+    max-width: 560px !important;
+}
+/* Sercice Section End*/
+
+
+/* Pricing Section Strat */
+
+.pricing__box {
+    box-shadow: 0 4px 16px 0 rgb(0 0 0 / 12%);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pricing__header_title h2 {
+    font-size: 20px;
+    color: var(--white-color);
+    margin-top: 20px;
+    font-weight: 700;
+}
+.pricing__header_title .dollar {
+    font-size: 50px;
+    font-weight: 700;
+}
+.pricing__bottom__text p{
+	color: var(--theme-color);
+	font-weight: 500;
+}
+.pricing__header_title span {
+    color: var(--white-color);
+}
+.pricing__header_title img {
+    position: relative;
+    top: 14px;
+}
+.pricing__header_title {
+    position: relative;
+    background: #00000005;
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.pricing__body ul li {
+    line-height: 40px;
+}
+.pricing__box .pricing__btn {
+    padding: 10px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.pricing__box .pricing__btn:hover{
+    background-image: var(--gradinet-color-hover);
+    color: var(--white-color);
+    border-color: var(--theme-color);
+}
+a.pricing__btn.active {
+    background: var(--theme-color);
+    color: var(--white-color);
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #0d6efd00;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background:var(--theme-color);
+	color: white !important;
+   
+}
+ul.pills-tab button {
+    border: 2px solid #e7e7e7;
+}
+.nav-pills .nav-link.pricing__btn.active {
+   
+    border: 2px solid var(--theme-color);
+}
+.nav-pills .nav-link.pricing__btn {
+    border-radius: 50px 0px 0px 50px;
+    color: #878991;
+    border: 2px solid var(--theme-color);
+    border-right:none;
+}
+.nav.nav-pills .last__btn {
+    border-radius: 0px 50px 50px 0px;
+    border: 2px solid var(--theme-color);
+    border-left:none;
+}
+button.pricing__btn {
+    padding: 18px 30px;
+}
+
+/* Pricing Section End*/
+
+/* Client Section Strat */
+.slider__header {
+    margin-right: 100px;
+}
+img.client__slider__img {
+    max-width: 70px;
+}
+.slider__reviwe i {
+    color: #ffcc00;
+    margin-right: 13px;
+    font-size: 20px;
+}
+
+.slider__reviwe h2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.slider__reviwe p {
+    margin-top: 20px;
+}
+.owl-nav {
+    position: absolute;
+    left: 70%;
+    top: 85%;
+}
+.owl-nav i {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 50px;
+}
+h5.accordion-title.d-flex.justify-content-between {
+    font-weight: 700 !important;
+	color: var(--title--color);
+}
+li.accordion-list-item {
+    background: #f5f7fa;
+    padding: 25px !important;
+}
+/* Client Section End*/
+
+/* Footer Section Strat */
+.footer{
+	background-color: #09142e;
+}
+.footer__menu a {
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+}
+.footer__social__icon a i {
+    margin-left: 15px;
+    color: #595e6a;
+    font-size: 20px;
+}
+/* Footer Section End */
+

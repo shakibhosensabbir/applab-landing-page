@@ -1,0 +1,66 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+  
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    img.awosem__imgss {
+        max-width: 400px !important;
+    }
+    .section__title h2 {
+        font-size: 30px;
+    }
+    .client__box{
+        margin-right: 100px;
+    }
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header__box img {
+        display: none;
+    }
+    .header__box {
+        margin-top: 80px;
+    }
+    .section__title h2 {
+        font-size: 27px;
+    }
+    img.awosem__img {
+        max-width: 350px !important;
+    }
+    .slider__header {
+        margin-right: 0px;
+    }
+    .download__img a img {
+        max-width: 150px;
+    }
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .client__box {
+        margin-bottom: 50px;
+    }
+    .download__box {
+        margin-bottom: 50px;
+    }
+    .design__box {
+        margin-bottom: 50px;
+    }
+    .header__box img {
+        display: none;
+    }
+}
