@@ -31,7 +31,7 @@ $("[data-background]").each(function () {
 	autoplayTimeout: 1000,
     responsive:{
         0:{
-            items:3,
+            items:2,
             nav:false
         },
         600:{
