@@ -49,7 +49,7 @@
 }
 
 /* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
 
     .client__box {
         margin-bottom: 50px;
@@ -63,4 +63,20 @@
     .header__box img {
         display: none;
     }
+    img.awosem__img {
+        max-width: 370px !important;
+    }
+    img.awosem__imgss {
+        max-width: 400px !important;
+    }
+    .header__btn.main__btn button {
+        margin-bottom: 20px;
+    }
+    .header__box h2 {
+        font-size: 40px;
+    }
+    .header {
+        height: 500px;
+    }
+    
 }
