@@ -182,7 +182,7 @@ label {
 	text-shadow: none;
 }
 span.fa-solid.fa-bars {
-    color: #ffffff91;
+    color: var(--theme-color);
     border: 1px solid #ffffff91;
     padding: 10px;
 }
@@ -195,6 +195,10 @@ span.fa-solid.fa-bars {
 	color: #555555;
 	font-size: 14px;
 	opacity: 1;
+}
+.navbar-light .navbar-toggler {
+    color: rgb(255 255 255 / 0%) !important;
+    border-color: rgba(0,0,0,.1);
 }
 .theme-overlay {
 	position: relative
